@@ -125,7 +125,25 @@ public class Snake{
 
             It should return false otherwise.
         */
-        return false;
+        bool DoesTouch = false;
+        for(int k = 1; k< segments.Count; k++)
+        {
+            if(segments[0].X  == segments[k].X )
+            {
+                DoesTouch = true;
+            }
+            else if(segments[0].Y == segments[k].Y)
+            {
+                DoesTouch = true;
+
+            }
+            else
+            {
+                DoesTouch = false;
+            }
+        }
+        return DoesTouch;
+    }
     }
 
     public void Update(){
