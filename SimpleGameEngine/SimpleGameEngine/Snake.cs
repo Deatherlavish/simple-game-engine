@@ -195,5 +195,21 @@ public class Snake{
             REMEMBER: you can use the static Time class to access the 
             DeltaTime property.
         */
+		 if(Direction == "UP")
+        {
+            y = -1 * speed * Time.DeltaTime;
+        }
+        else if(Direction == "DOWN")
+        {
+            y = 1 * speed * Time.DeltaTime;
+        }
+        else if (Direction == "LEFT")
+        {
+            x = -1 * speed * Time.DeltaTime;
+        }
+        else if (Direction == "RIGHT")
+        {
+            x = 1 * speed * Time.DeltaTime;
+        }
     }
 }
