@@ -155,6 +155,16 @@ public class Snake{
             yDir = 1;
             xDir = 0;
         }
+		 else if(Input.KeyPressed == InputType.LEFT)
+        {
+            yDir = 0;
+            xDir = -1;
+        }
+        else if (Input.KeyPressed == InputType.RIGHT)
+        {
+            yDir = 0;
+            xDir = 1;
+        }
         /*  ------------------------------------------
             2.5
             ------------------------------------------   
